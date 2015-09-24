@@ -88,9 +88,10 @@ def render_site(projects):
     cache = mk_cache()
 
     copy_files('*.jpeg', src=cache, dst=out)
+    copy_files('*.png', src='templates', dst=out)
     copy_files('*.css', src='templates', dst=out)
 
-    print()
+    print('')
 
     for in_file in glob(pjoin('templates', '*.html')):
         print('Rendering {}...'.format(in_file))
