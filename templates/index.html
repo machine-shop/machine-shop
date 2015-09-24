@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BIDS Machine Shop</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<body>
+
+  <div class="tabs">
+    <h1>The BIDS Machine Shop</h1>
+
+    <input type="radio" name="tabs" id="tab1" checked >
+    <label for="tab1">
+        <i class="fa fa-html5"></i><span>Projects</span>
+    </label>
+
+    <input type="radio" name="tabs" id="tab2">
+    <label for="tab2">
+        <i class="fa fa-css3"></i><span>About</span>
+    </label>
+
+    <div id="tab-content1" class="tab-content">
+
+      <div id="projects">
+
+      {% for project, info in projects %}
+
+      <div class="project">
+        <div class="project-submitted"><b>Submitted:</b> {{ info['submitted']
+          }}</div>
+
+        {% if info['started'] %}
+        <div class="project-started"><b>Started:</b> {{ info['started']
+          }}</div>
+        {% endif %}
+
+        {% if info['completed'] %}
+        <div class="project-completed"><b>Completed:</b> {{ info['completed']
+          }}</div>
+        {% endif %}
+
+        <div class="project-status"><b>Status:</b> {{ info['status'] }}</div>
+        <div class="project-title">{{ project }}</div>
+        <div class="project-members">
+          {% for member in info['members'] %}
+            <a href="https://github.com/{{ member }}"><img src='{{
+          member }}.jpeg'/> @{{ member }}</a>
+          {% endfor %}
+        </div>
+        <div class="project-description">{{ info['description'] }}</div>
+      </div>
+
+      {% endfor %}
+
+      </div>
+      </div>
+
+      <div id="tab-content2" class="tab-content">
+        <h2>Test</h2>
+        Here we will say something about the machine shop.
+      </div>
+
+</body>
+</html>

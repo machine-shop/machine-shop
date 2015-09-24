@@ -1,0 +1,24 @@
+---
+projects:
+  Machine Shop website:
+    description:
+      Parse an HTML file and generate a static website showing the
+      status of the project as well as the team members involved.
+    submitted: 01/08/2015
+    started: 24/09/2015
+    members:
+      - stefanv
+    status: In progress
+
+  Machine Shop discussion at Suncadia:
+    description:
+      Birds-of-a-feather session at Suncadia to discuss risks and
+      successes with similar efforts at other groups.
+    submitted: 01/08/2015
+    members:
+      - stefanv
+      - billhowe
+      - amueller
+    status: Scheduled
+
+...
