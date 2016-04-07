@@ -1,0 +1,57 @@
+P: Previous week
+N: Next Week
+?: Issues / questions
+
+* [2016-04-04 Mon]
+
+** Team: scikit-image
+*** Anand
+  - P: Implementing colorization paper by Yatziv & Sapiro
+    - Looks to be one of the original colorization papers
+    - Worked on understanding the paper + algorithm + paths
+    - Partially implemented
+  - N:
+    - Implement working proof of concept
+  - ?:
+    - Chat about paths a bit more
+*** Seth
+  - P: Generalize the Hough transform peak detector
+    - Read through ellipse / circle papers
+    - Output of ellipse / circle / line are quite different, need to
+      figure out what parts of the peak detector can be re-used
+  - N:
+    - Done with ellipse peak detector
+    - (Then circle, then general detector)
+  - ?:
+    - No feedback yet on #2002
+*** Jennifer
+  - P: Tiff-file metadata reading
+    - Code is done, need to rebase
+  - N:
+    - Read the paper
+    - Choose the algorithm
+    - Some preliminary code, may or may not work
+  - ?:
+    - Need help with rebase
+    - Please review existing PR after above mentioned rebase
+*** Stefan
+  - P:
+    - Built manylinux wheels
+    - Filed PR against Matthew Brett's builder repo
+  - N:
+    - Finalize Debian package
+*** Ben Gee
+  - P: Looking at Foundation
+    - Trying to build test website
+  - N:
+    - Meet with Tushar on Friday, work on reskin
+    - Will have preliminary version of reskin ready
+      with progress steps highlighting one by one
+  - ?: Could not get CSS to load once uploaded
+    - Partially worked when using CSS from CDN
+*** Emily Pedersen
+  - P: Set up feedback meetings for this week
+    - Talk to Anand about logo
+  - N:
+    - Return feedback from meetings
+    - Start thinking about website
