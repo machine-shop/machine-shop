@@ -1,57 +1,98 @@
+#+STARTUP: overview hidestars odd
+
 P: Previous week
 N: Next Week
 ?: Issues / questions
 
-* [2016-04-04 Mon]
 
-** Team: scikit-image
-*** Anand
-  - P: Implementing colorization paper by Yatziv & Sapiro
-    - Looks to be one of the original colorization papers
-    - Worked on understanding the paper + algorithm + paths
-    - Partially implemented
-  - N:
-    - Implement working proof of concept
-  - ?:
-    - Chat about paths a bit more
-*** Seth
-  - P: Generalize the Hough transform peak detector
-    - Read through ellipse / circle papers
-    - Output of ellipse / circle / line are quite different, need to
-      figure out what parts of the peak detector can be re-used
-  - N:
-    - Done with ellipse peak detector
-    - (Then circle, then general detector)
-  - ?:
-    - No feedback yet on #2002
-*** Jennifer
-  - P: Tiff-file metadata reading
-    - Code is done, need to rebase
-  - N:
-    - Read the paper
-    - Choose the algorithm
-    - Some preliminary code, may or may not work
-  - ?:
-    - Need help with rebase
-    - Please review existing PR after above mentioned rebase
-*** Stefan
+* Anand Kuchibotla (scikit-image)
+*** [2016-04-04 Wed]
+    - P: Implementing colorization paper by Yatziv & Sapiro
+      - Looks to be one of the original colorization papers
+      - Worked on understanding the paper + algorithm + paths
+      - Partially implemented
+    - N:
+      - Implement working proof of concept
+    - ?:
+      - Chat about paths a bit more
+
+* Seth Park (scikit-image)
+*** [2016-04-04 Wed]
+    - P: Generalize the Hough transform peak detector
+      - Read through ellipse / circle papers
+      - Output of ellipse / circle / line are quite different, need to
+        figure out what parts of the peak detector can be re-used
+    - N:
+      - Done with ellipse peak detector
+      - (Then circle, then general detector)
+    - ?:
+      - No feedback yet on #2002
+
+* Jennifer Dai (scikit-image)
+*** [2016-04-06 Wed]
+    - P: Tiff-file metadata reading
+      - Code is done, need to rebase
+    - N:
+      - Read the paper
+      - Choose the algorithm
+      - Some preliminary code, may or may not work
+    - ?:
+      - Need help with rebase
+      - Please review existing PR after above mentioned rebase
+* Stefan van der Walt
+*** [2016-04-06 Wed]
+    - P:
+      - Built manylinux wheels
+      - Filed PR against Matthew Brett's builder repo
+    - N:
+      - Finalize Debian package
+
+* Emily Pedersen (Machine Shop)
+*** [2016-04-06 Wed]
+    - P: Set up feedback meetings for this week
+      - Talk to Anand about logo
+    - N:
+      - Return feedback from meetings
+      - Start thinking about website
+
+* Sean Singh (scikit-image)
+*** [2016-04-06 Wed]
+    - P: No feedback received
+
+* Vivian Fang & Flora Xue (Text Thresher)
+*** [2016-04-04 Mon]
+    - P:
+      - Implement new question schema parser
+    - N:
+      - Implement new article parser
+    - ?:
+      - Stefan: add Docker image for backend so Kevin can test
+        frontend against it
+
+* Jerry
+*** [2016-04-08 Fri]
   - P:
-    - Built manylinux wheels
-    - Filed PR against Matthew Brett's builder repo
+    - Bump matplotlib PR
+    - Find out why viscm crashes on mpl-dev
+    - Change save format to json
+    - Change labels on brightness sliders to something more accurate
+    - Add button to flip sliders
+    - Add support for up-up-up colormap
   - N:
-    - Finalize Debian package
-*** Ben Gee
-  - P: Looking at Foundation
-    - Trying to build test website
-  - N:
-    - Meet with Tushar on Friday, work on reskin
-    - Will have preliminary version of reskin ready
-      with progress steps highlighting one by one
-  - ?: Could not get CSS to load once uploaded
-    - Partially worked when using CSS from CDN
-*** Emily Pedersen
-  - P: Set up feedback meetings for this week
-    - Talk to Anand about logo
-  - N:
-    - Return feedback from meetings
-    - Start thinking about website
+    - smoothing of diverging colormap join point
+    - real JSON format for colormaps
+    - tests for saving/loading all our different formats
+    - basic tests for viscm view
+    - Future: PR to matplotlib adding support for the JSON format
+  - ?:
+    - Nathaniel TODO:
+      - Send Jerry some specs to see what they look like
+      - Start writing a spec for the colormap format
+    - Stéfan TODO:
+      - Help with subdivision curves
+
+* Ananth Kumar (Even Flow)
+*** [2016-04-08 Fri]
+    - P: Get function 2 and 6 done, including tests.
+    - N: Finish up implementation of functions 9 and 15 (getcountmat
+      and replace), and testing.
