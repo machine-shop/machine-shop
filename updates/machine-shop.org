@@ -1,11 +1,21 @@
 #+STARTUP: overview hidestars odd
+#+TODO: TODO(t) | DONE(d)
 
 P: Previous week
 N: Next Week
 ?: Issues / questions
 
-
 * Anand Kuchibotla (scikit-image)
+*** [2016-04-13 Wed]
+    - P:
+      - Some work on machine-shop logo
+      - Colorization: now have running code, but results are
+        surprisingly colorful!
+    - N:
+      - Get this thing working: time or actual results.
+    - ?:
+      - How do we incorporate luminance?
+      - Very slow
 *** [2016-04-04 Wed]
     - P: Implementing colorization paper by Yatziv & Sapiro
       - Looks to be one of the original colorization papers
@@ -16,7 +26,21 @@ N: Next Week
     - ?:
       - Chat about paths a bit more
 
+
 * Seth Park (scikit-image)
+*** [2016-04-13 Wed]
+    - P: Hough peak detector
+      - Applied algorithm to sunglass image, but circle detector never finishes
+      - Since got stuck on this issue, worked on #2014: incorrect HOG
+        descriptors for odd size; think there may be a fix
+    - N:
+      - Follow up on #2014
+      - Work more on accumulator peak detector
+      - Research Fisher vector from other descriptor
+    - ?:
+      - skimage algorithm runs forever
+      - Need feedack for PR #2002
+
 *** [2016-04-04 Wed]
     - P: Generalize the Hough transform peak detector
       - Read through ellipse / circle papers
@@ -28,7 +52,16 @@ N: Next Week
     - ?:
       - No feedback yet on #2002
 
+
 * Jennifer Dai (scikit-image)
+*** [2016-04-13 Wed]
+    - P: Optimizing Hough transform
+      - Read paper, decided on 21HT (same as in OpenCV)
+      - Looked at OpenCV a bit, wrote some preliminary code
+    - N:
+      - Look some more at OpenCV
+      - Try and figure out how geometric description and algorithm relate
+
 *** [2016-04-06 Wed]
     - P: Tiff-file metadata reading
       - Code is done, need to rebase
@@ -39,7 +72,18 @@ N: Next Week
     - ?:
       - Need help with rebase
       - Please review existing PR after above mentioned rebase
+
+
 * Stefan van der Walt
+  (These are my updates for scikit-image, ask me if you're interested
+  in any other projects)
+*** [2016-04-13 Wed]
+    - P:
+      - Built binary manylinux wheels for skimage
+      - Implemented Travis-CI testing
+    - N:
+      - Continue working on Debian package
+
 *** [2016-04-06 Wed]
     - P:
       - Built manylinux wheels
@@ -47,7 +91,16 @@ N: Next Week
     - N:
       - Finalize Debian package
 
+
 * Emily Pedersen (Machine Shop)
+*** [2016-04-13 Wed]
+    - P:
+      - Met with different groups & students
+    - N:
+      - Compiling feedback, finalized by Friday
+      - Playing around with software for improving website; working on mock-up
+      - Meeting with one more team on Friday
+
 *** [2016-04-06 Wed]
     - P: Set up feedback meetings for this week
       - Talk to Anand about logo
@@ -55,11 +108,26 @@ N: Next Week
       - Return feedback from meetings
       - Start thinking about website
 
+
 * Sean Singh (scikit-image)
+*** [2016-04-13 Wed]
+    - P:
+      - Investigating difference between OpenCV and scikit-image HoG,
+        discovered discrepancy in L1-norm
+      - Egor Panfilov may have fixed this with unusual normalization
+    - N:
+      - Submit PR for updated GLCM (non-normalized results wrongly clipped to 1)
+
 *** [2016-04-06 Wed]
     - P: No feedback received
 
+
 * Vivian Fang & Flora Xue (Text Thresher)
+*** [2016-04-13 Wed]
+    - P:
+    - N:
+    - ?:
+
 *** [2016-04-04 Mon]
     - P:
       - Implement new question schema parser
@@ -69,7 +137,8 @@ N: Next Week
       - Stefan: add Docker image for backend so Kevin can test
         frontend against it
 
-* Jerry
+
+* Jerry Zhao
 *** [2016-04-08 Fri]
   - P:
     - Bump matplotlib PR
@@ -91,8 +160,52 @@ N: Next Week
     - Stéfan TODO:
       - Help with subdivision curves
 
+
 * Ananth Kumar (Even Flow)
 *** [2016-04-08 Fri]
     - P: Get function 2 and 6 done, including tests.
     - N: Finish up implementation of functions 9 and 15 (getcountmat
       and replace), and testing.
+
+* Ben Gee (MLTSP)
+*** [2016-04-13 Wed]
+    - P:
+      - Working on Cesium redesign
+    - N:
+      - Applying Cesium redesign to application
+
+
+* Tushar Singhal (MLTSP)
+*** [2016-04-13 Wed]
+    - P:
+      - Working on learning Javascript
+
+* Ace Hao (Even Flow)
+  * [2016-04-13 Wed]
+    - P:
+      - Finished implementing replace; testing replace_15.py, doproduction_3
+    - N:
+      - Going to finish normTheStats_13.py, and 2 other functions. We
+        are planning to meet on Sunday morning and have a coding
+        sprint until afternoon.
+    - ?:
+      - I spent quite a bit of time figuring out how to export intermediate
+        matrixes from Matlab and import them to numpy for testing; I'm
+        wondering if there is a better way for this process. (S: answered)
+      - I have also encountered cases that small differences between two
+        numpy arrays return a false value when comparing. Is using
+        np.isclose or np.testing.assert_array_almost_equal the correct
+        approach to resolve such issue? (S: answered)
+
+* Christopher Tennant (Even Flow)
+  * [2016-04-09 Sat]
+    - P: worked on getting caught up with Ananth and Ace (nice work
+      you guys!), reviewed GIT workflow, revised goals for development
+      of error checking codes, developed a "theory-sheet" describing
+      the "mathematical-backbone" of the information theory
+      statistics, and scheduled a "sprint" and "codeathon" with Ace
+      and Ananth for the coming week.
+    - N: code uniform bin edges and script for calculating conditional,
+      joint, and marginal entropies, start list, in "issues", of
+      desired code improvements, survive the "codeathon" to enhance
+      understanding of core algorithms
