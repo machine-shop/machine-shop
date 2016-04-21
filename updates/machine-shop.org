@@ -6,6 +6,12 @@ N: Next Week
 ?: Issues / questions
 
 * Anand Kuchibotla (scikit-image)
+*** [2016-04-20 Wed]
+    - P:
+      - Blob colors almost working
+      - Still picking wrong point inside of blob
+    - N:
+      - Refactor to use cluster / image for each marker
 *** [2016-04-13 Wed]
     - P:
       - Some work on machine-shop logo
@@ -28,6 +34,13 @@ N: Next Week
 
 
 * Seth Park (scikit-image)
+*** [2016-04-20 Wed]
+    - P:
+      - One feedback on PR #2002 regarding unused import--fixed.
+      - Worked on the fisher vector
+    - N:
+      - Finish fisher vector implementation
+      - Test the hough_ellipse
 *** [2016-04-13 Wed]
     - P: Hough peak detector
       - Applied algorithm to sunglass image, but circle detector never finishes
@@ -54,6 +67,12 @@ N: Next Week
 
 
 * Jennifer Dai (scikit-image)
+*** [2016-04-20 Wed]
+    - P:
+      - Reading paper + understanding it
+    - N:
+      - Implementation of the algorithm
+      - Get a test to pass
 *** [2016-04-13 Wed]
     - P: Optimizing Hough transform
       - Read paper, decided on 21HT (same as in OpenCV)
@@ -61,7 +80,7 @@ N: Next Week
     - N:
       - Look some more at OpenCV
       - Try and figure out how geometric description and algorithm relate
-
+        to the code
 *** [2016-04-06 Wed]
     - P: Tiff-file metadata reading
       - Code is done, need to rebase
@@ -77,6 +96,12 @@ N: Next Week
 * Stefan van der Walt
   (These are my updates for scikit-image, ask me if you're interested
   in any other projects)
+*** [2016-04-20 Wed]
+    - P:
+      - Handled API deprecation issue
+      - Solicited use cases for talk
+    - N:
+      - Start preparing for DS expo talk
 *** [2016-04-13 Wed]
     - P:
       - Built binary manylinux wheels for skimage
@@ -93,6 +118,9 @@ N: Next Week
 
 
 * Emily Pedersen (Machine Shop)
+*** [2016-04-20 Wed]
+    - P: Feedback report
+    - N: Organize end of year meetup
 *** [2016-04-13 Wed]
     - P:
       - Met with different groups & students
@@ -123,6 +151,11 @@ N: Next Week
 
 
 * Vivian Fang & Flora Xue (Text Thresher)
+*** [2016-04-20 Wed]
+    - P: Refactored model to handle multiple articles attached to schema
+    - N:
+      - Get Docker tester working
+      - Implement model redesign + schema parser
 *** [2016-04-13 Wed]
     - P:
     - N:
@@ -139,6 +172,19 @@ N: Next Week
 
 
 * Jerry Zhao
+*** [2016-04-22 Fri]
+    - N:
+      - start working on tests (py.test + Travis)
+      - for the V-shaped diverging colormaps, add a slider for controlling the smoothing of the pointy corner
+      - initial idea: set the derivative of the lightness function to
+        scipy.signal.erf(s * x),  where s is a parameter controlled by
+        the slider, and x is the colormap coordinate (between 0 and 1)
+
+Nathaniel:
+- actually write that first draft JSON colormap format spec
+
+Stéfan:
+- make recommendation about what subdivision method to use to replace the current bezier control system
 *** [2016-04-08 Fri]
   - P:
     - Bump matplotlib PR
@@ -168,6 +214,13 @@ N: Next Week
       and replace), and testing.
 
 * Ben Gee (MLTSP)
+*** [2016-04-20 Wed]
+    - P:
+      - Monday mini-sprint with Tushar
+      - Added skin to webapp
+    - N:
+      - Fix pop-up dialogs
+      - Add predict
 *** [2016-04-13 Wed]
     - P:
       - Working on Cesium redesign
@@ -176,6 +229,8 @@ N: Next Week
 
 
 * Tushar Singhal (MLTSP)
+*** [2016-04-20 Wed]
+    - P: Met with Ben on Monday to work on reskin
 *** [2016-04-13 Wed]
     - P:
       - Working on learning Javascript
