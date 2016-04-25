@@ -208,6 +208,11 @@ Stéfan:
 
 
 * Ananth Kumar (Even Flow)
+*** [2016-04-25 Mon]
+    - P: Completed Kernel Density Estimation for infoflow package (PR
+      pending)
+      - N: Finish shannonbitswrapper.py (evenflow package)
+
 *** [2016-04-08 Fri]
     - P: Get function 2 and 6 done, including tests.
     - N: Finish up implementation of functions 9 and 15 (getcountmat
