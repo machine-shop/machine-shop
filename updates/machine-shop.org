@@ -151,6 +151,14 @@ N: Next Week
 
 
 * Vivian Fang & Flora Xue (Text Thresher)
+*** [2016-04-27 Wed]
+    - P:
+      - Implement root topic API endpoint + /topic/id endpoint for all children
+      - Serialize article highlight
+      - Endpoints for posting questions / answers
+    - N:
+      - Parse Aaron's highlighted article
+      - Add endpoint for Maneesha's hint API
 *** [2016-04-20 Wed]
     - P: Refactored model to handle multiple articles attached to schema
     - N:
