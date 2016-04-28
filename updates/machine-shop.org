@@ -6,6 +6,11 @@ N: Next Week
 ?: Issues / questions
 
 * Anand Kuchibotla (scikit-image)
+*** [2016-04-27 Wed]
+    - P:
+      - Stuck on colorization algorithm--very slow
+      - Worked some more on the machine-shop logo; ready apart from
+        minor tweaks
 *** [2016-04-20 Wed]
     - P:
       - Blob colors almost working
@@ -34,6 +39,14 @@ N: Next Week
 
 
 * Seth Park (scikit-image)
+*** [2016-04-27 Wed]
+    - P:
+      - Finish implementation of Fisher vectors.  Test on CIFAR10
+        (Fisher + daisy features).  Baseline 10%, this got 39%
+        accuracy on classification (10 classes to choose from).
+        Images are only 32x32, so not ideal.
+    - N:
+      - Next will try CALTECH 256.
 *** [2016-04-20 Wed]
     - P:
       - One feedback on PR #2002 regarding unused import--fixed.
@@ -67,6 +80,13 @@ N: Next Week
 
 
 * Jennifer Dai (scikit-image)
+*** [2016-04-27 Wed]
+    - P:
+      - Still looking at optimized version of Hough transform
+      - Overall structure now laid out, but need to figure out some
+        specifics while taking a look at OpenCV code for inspiration
+    - ?:
+      - Still having rebase issues
 *** [2016-04-20 Wed]
     - P:
       - Reading paper + understanding it
@@ -118,6 +138,12 @@ N: Next Week
 
 
 * Emily Pedersen (Machine Shop)
+*** [2016-04-27 Wed]
+    - P:
+      - BIDS end-of-year function happening tomorrow
+      - Wrote up blurbs for each
+    - ?:
+      - Need review of summary document
 *** [2016-04-20 Wed]
     - P: Feedback report
     - N: Organize end of year meetup
@@ -227,6 +253,13 @@ Stéfan:
       and replace), and testing.
 
 * Ben Gee (MLTSP)
+*** [2016-04-27 Wed]
+    - P:
+      Worked on integrating the new theme.  Focused on bring up the
+      feature selection dialogue.
+    - N:
+      - Project selector
+      - Transfer to cesium web
 *** [2016-04-20 Wed]
     - P:
       - Monday mini-sprint with Tushar
